@@ -1,0 +1,5 @@
+body{
+    background-color: hsl(0, 50%, 50%);
+    border: solid hsl(358, 100%, 100%);
+    color: hsl(358, 0%, 50%);
+}
