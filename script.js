@@ -10,10 +10,7 @@ const addToElement = document.querySelector('.containerTasks');
 const addToElementProj = document.querySelector('.containerProjs');
 
 
-// variables for when adding a task
-const title = document.createElement('p');
-const description = document.createElement('p');
-const dueDate = document.createElement('p');
+
 
 
 
@@ -25,6 +22,10 @@ let  todoes = {
     dueDate:     "" , 
 
 }
+
+
+
+
 
 // create the input space for adding tasks 
 
@@ -108,52 +109,26 @@ function createElementsForProjInput(){
    
         function addLabel(label){
         const titleLabel = document.createElement('label')
-        titleLabel.textContent = `${label} \n`
-        titleLabel.classList.add('paraTaskAdded');
+        titleLabel.textContent = `${label}`
+        titleLabel.classList.add('paraProjAdded');
         addToForm.appendChild(titleLabel);
        
         }
 
              addLabel("Title")
             const titleInput = document.createElement('input');
-            titleInput.placeholder = "Type task name here..";
-            titleInput.type = "text"
-            titleInput.required = "true"
+            titleInput.placeholder = "Type project name here..";
+            titleInput.type = "text";
+            titleInput.autocapitalize = 'on';
+            titleInput.required = "true";
+            titleInput.classList.add('inputProjAdded');
             addToForm.appendChild(titleInput);
 
-            addLabel("Description")
-            const descriptionInput = document.createElement('input');
-            descriptionInput.placeholder = "Type description";
-            descriptionInput.type = "text"
-            descriptionInput.required = "true"
-            addToForm.appendChild(descriptionInput);
-
-            addLabel("dueDate")
-            const dueDateInput = document.createElement('input');
-            dueDateInput.type = "date"
-            dueDateInput.required = "true"
-            addToForm.appendChild(dueDateInput);
-
-            
+                          
             const addTaskButton = document.createElement('button');
             addTaskButton.classList.add('buttonAddTask');
-            addTaskButton.textContent  = "+ Add Task"
+            addTaskButton.textContent  = "+ Add Project";
             addToForm.appendChild(addTaskButton);
-
-
-
-
-//         <form>
-//       <label for="name">Name:</label>
-//       <input type="text" id="name" name="name" placeholder="Name"><br/>
-//       <label>Email: <input type="email" name="email" placeholder="email"></label><br/>
-//       <label for="birth">Birth : </label>
-//       <input type="date" id="birth" value="birth"><br/>
-
-//         <input type="submit" value="ClickHere">
-
-//   </form>
-
 
   
 }

@@ -134,7 +134,9 @@ a:link, a:visited {
 input{
     height: 25px;
     border: none;
-    color: red;
+    color: var(--main-darker-color);
+    font-size: 1rem;
+
 }
 label{
     background-color: var(--main-dark-color);
