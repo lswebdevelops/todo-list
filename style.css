@@ -1,0 +1,106 @@
+:root{
+    --main-darker-color: rgb(51,51,51);
+    --main-dark-color: rgb(204,204,204);
+    --main-grey-color: rgb(221,221,221);
+    --main-lessGrey-color: rgb(238,238,238);
+  }
+
+
+
+ body{
+    color: var(--main-lessGrey-color);   
+    padding: 0;
+    margin: 0;
+  }
+
+  /* header */
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btnNav{
+    background-color:var(--main-darker-color);
+    border: none;
+    color: var(--main-lessGrey-color);
+
+}
+
+
+.todoH1{
+    font-size: 2rem;
+}
+  header{
+    background-color: var(--main-darker-color);
+  }
+  
+  /* main */
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+     
+}
+
+main div{
+    width: 100%;
+    padding: 3px;
+    
+}
+
+main .containerInbox,main .containerInbox1,  main .containerInbox2{
+    background-color: var(--main-grey-color);
+    
+}
+main .projects{
+    background-color: var(--main-grey-color);
+}
+.paraProj,.paraInbox{
+    color: var(--main-darker-color);
+    text-align: left;
+   
+    padding-left: 55px;
+    font-size: 2rem;
+    font-weight: 700;
+    }
+
+main .containerTodoes{
+    background-color: var(--main-grey-color);
+    padding-bottom: 23px;
+}
+ .btnTodos, .addProj, .today,.thisWeek{
+    width: 85%;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    text-align: left;
+    padding-left: 5%;
+ }
+ main div :hover{
+  background-color: var(--main-dark-color);
+ }
+
+/* Footer */
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--main-darker-color);
+    color: var(--main-lessGrey-color);
+    font-size: 18px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: var(--main-lessGrey-color);
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/8e7c30ddfb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
@@ -11,25 +12,49 @@
 <body>
     <header>
     <div class="nav">
-        <h1 class="todoH1">Todo List</h1>
-    <button class="btnNav">-</button>
+        <h1 class="todoH1"><i class="fa-solid fa-check-double"></i> 
+            Todo List</h1>
+    <button class="btnNav"><i class="fa-sharp fa-2x fa-solid fa-bars"></i></button>
     </div>
 </header>
 <main>
     <div class="containerInbox">
-        <button class="today">Today</button>
-        <button class="thisWeek">This week</button>
+        <button class="today"><i class="fa-sharp fa-solid fa-inbox"></i> 
+            Inbox</button>
     </div>
+    <div class="containerInbox1">
+        <button class="today"><i class="fa-sharp fa-solid fa-calendar-day"></i> 
+            Today</button>
+    </div>
+    <div class="containerInbox2">
+        <button class="thisWeek"><i class="fa-solid fa-calendar-week"></i> 
+            This week</button>
+    </div>
+
     <div class="projects">
-        <button class="addProj">Add Projects</button>
+        <p class="paraProj">
+            Projects</p>
+    <button class="addProj"><i class="fa-sharp fa-solid fa-plus"></i>
+         Add Projects</button>
     </div>
-<div class="containerTodoes">
-    <button class="btnTodos">Add Task</button>
-</div>
+
+
+
+    <div class="containerTodoes">
+        <p class="paraInbox">
+            Inbox</p>
+    <button class="btnTodos"><i class="fa-sharp fa-solid fa-plus"></i>
+         Add Task</button>
+    </div>
+
 
 </main>
-<footer>
-    <p class="parFooter">Copyright © 2022 LS-WEB</p>
+
+
+
+
+<footer class="footer">
+    <p class="parFooter"><a href="https://github.com/lswebdevelops/todo-list">Copyright © 2022 LS-WEB <i class="fa-brands fa-github"></i></a></p>
 </footer>
 
 
