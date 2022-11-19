@@ -35,10 +35,14 @@
   }
   
   /* main */
+  .containerInbox{
+    padding-top: 23px;
+  }
 main{
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: var(--main-darker-color);
      
 }
 
@@ -59,7 +63,7 @@ main .projects{
     color: var(--main-darker-color);
     text-align: left;
    
-    padding-left: 55px;
+    padding-left: 25px;
     font-size: 2rem;
     font-weight: 700;
     }
@@ -69,7 +73,7 @@ main .containerTodoes{
     padding-bottom: 23px;
 }
  .btnTodos, .addProj, .today,.thisWeek{
-    width: 85%;
+    width: 95%;
     border: none;
     border-radius: 5px;
     height: 35px;
@@ -79,7 +83,10 @@ main .containerTodoes{
  main div :hover{
   background-color: var(--main-dark-color);
  }
-
+.containerTasks{
+    background-color: var(--main-grey-color);
+    box-shadow: 3px 3px 3px var(--main-lessGrey-color);
+}
 /* Footer */
 
 .footer{
@@ -104,3 +111,12 @@ a {
 a:link, a:visited {
     color: var(--main-lessGrey-color);
 }
+
+
+/* don't show the hamburger-button when device is big */
+@media (min-width: 550px) {
+    .btnNav{
+        display: none;
+    }
+  }
+  
