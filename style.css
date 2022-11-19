@@ -72,7 +72,7 @@ main .containerTodoes{
     background-color: var(--main-grey-color);
     padding-bottom: 23px;
 }
- .btnTodos, .addProj, .today,.thisWeek{
+ .btnTodos, .addProj, .inbox, .today,.thisWeek{
     width: 95%;
     border: none;
     border-radius: 5px;
@@ -113,6 +113,29 @@ a:link, a:visited {
 }
 
 
+
+/* Tasks added  */
+
+.paraTaskAdded{
+    background-color:red ;
+    color: yellow;
+    
+}
+
+
+
+/* projects added */
+
+
+
+
+
+
+
+
+
+
+
 /* don't show the hamburger-button when device is big */
 @media (min-width: 550px) {
     .btnNav{
@@ -120,3 +143,6 @@ a:link, a:visited {
     }
   }
   
+
+
+
