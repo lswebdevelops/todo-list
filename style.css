@@ -19,13 +19,16 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
 .btnNav{
     background-color:var(--main-darker-color);
     border: none;
     color: var(--main-lessGrey-color);
-
+    padding-top: 30px;
 }
-
+.hamburguer :hover{
+    color: var(--main-dark-color);
+}
 
 .todoH1{
     font-size: 2rem;
@@ -80,7 +83,8 @@ main .containerTodoes{
     text-align: left;
     padding-left: 5%;
  }
- main div :hover{
+ .containerInbox :hover, .containerInbox1 :hover,.containerInbox2 :hover,.addProj :hover, .addTashdiv :hover{
+   
   background-color: var(--main-dark-color);
  }
 .containerTasks{
@@ -116,14 +120,34 @@ a:link, a:visited {
 
 /* Tasks added  */
 
-.paraTaskAdded{
-    background-color:red ;
-    color: yellow;
-    
+.containerTasks , .containerProjs{
+    display: flex;
+    justify-content: center;
 }
+.form, .formProj{
+   
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+      
+}
+input{
+    height: 25px;
+    border: none;
+    color: red;
+}
+label{
+    background-color: var(--main-dark-color);
+    color: var(--main-darker-color);
+    font-size: 1.3rem;
+}
+.buttonAddTask{
+    height: 30px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 
-
-
+}
 /* projects added */
 
 
